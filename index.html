@@ -1,11 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário - Camisas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camisas WSW24</title>
+
+<!-- Folha de estilo CSS -->
+ <link rel="stylesheet" href="CSS/styles.css">
+
+<link rel="icon" type="image/jpeg" href="IMG/DS-logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
 </head>
-<body>
+
+
+
+
+<body style="background-image: url(img/backgroundInsc..jpg)">
+  <header id="header">
+    <a href="#" id="wws">World Space Week</a>
   
+  </header>
+  <div class="formulario">
+    <form action="" method="post" name="formPedidos">
+      <div class="form-group">
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="Nome Completo" placeholder="Digite seu nome" required>
+      </div>
+      <div class="form-group">
+        <label for="curso">Curso:</label><br>
+        <select id="curso" name="Curso" required>
+          <option value="">Selecione seu Curso</option>
+          <option value="ADM">Administração</option>
+          <option value="DS">Desenvolvimento de Sistemas</option>
+          <option value="EDF">Edificações</option>
+          <option value="MTM">Multimídia</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="serie">Ano</label><br>
+        <select id="serie" name="Turma" required>
+          <option value="">Selecione seu ano</option>
+          <option value="1°">1º Ano</option>
+          <option value="2°">2º Ano</option>
+          <option value="3°">3º Ano</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="sexo">Sexo:</label><br>
+        <select id="sexo" name="Sexo" required>
+          <option value="">Selecione seu sexo</option>
+          <option value="M">Masculino</option>
+          <option value="F">Feminino</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="nomeCamisa">Nome:</label><br>
+        <input type="text" id="name" name="Nome na camisa" placeholder="Digite o nome da sua camisa" required>
+      </div>
+      <div class="form-group">
+        <label for="tamanho">Tamanho</label><br>
+        <select id="tamanho" name="Turma" required>
+          <option value="">Selecione o tamanho</option>
+          <option value="P">P</option>
+          <option value="M">M</option>
+          <option value="G">G</option>
+          <option value="GG">GG</option>
+        </select>
+      </div>
+      <input type="submit" value="Enviar pedido" id="enviar">
+    </form>
+  </div>
+  <div class="borderMove">.</div>
+  <footer>
+    <p>&copy; <span>2024 World Space Week</span> - All rights reserved</p>
+    <p id="developers"><span>	&lt;&frasl;&gt;</span> Desenvolvido por <span>Manoel Lobo</span></p>
+  </footer>
+
+  <script src="JS\script.js"></script>
 </body>
 </html>
